@@ -24,6 +24,7 @@ void    Span::addNumber(int n)
     this->_data.push_back(n);
 }
 
+//Plus petit écart
 int     Span::shortestSpan(void) const
 {
     if (this->_data.size() < 2)
@@ -40,6 +41,7 @@ int     Span::shortestSpan(void) const
     return (minSpan);
 }
 
+//Plus grand écart
 int     Span::longestSpan(void) const
 {
     if (this->_data.size() < 2)
